@@ -1,0 +1,139 @@
+// Generales
+
+// Colors 
+@Pale-blue: hsl(225, 100%, 94%);
+@Bright-blue: hsl(245, 75%, 52%);
+@Very-pale-blue: hsl(225, 100%, 98%);
+@Desaturated-blue: hsl(224, 23%, 55%);
+@Dark-blue: hsl(223, 47%, 23%);
+
+// Fonts 
+@principal: 'Red Hat Display', sans-serif;
+
+// Font Weights
+@light: 300;
+@medium: 500;
+@regular: 700;
+@bold: 900;
+
+/* Principales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 16px;
+    background-color: @Pale-blue;
+    width: 100%;
+    max-width: 375px;
+    font-family: @principal;
+    
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+    background-color: @Very-pale-blue;
+    border-radius: 1rem;
+    box-shadow: 5px 7px 7px 7px rgba(@Desaturated-blue, 0.2);
+}
+
+img{
+    width: 100%;
+}
+
+
+/* Variables */
+
+.image img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+.text{
+    width: 80%;
+    margin: 0 auto;
+    h1{
+        padding: 1rem;
+    }
+    p{
+        color: @Desaturated-blue;
+        width: 90%;
+        margin: 0 auto;
+        line-height: 1.2rem;
+        padding-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.9rem 0 0.4rem 0;
+    background-color: rgba(@Pale-blue, 0.4);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    .icon{
+        width: 15%;
+        
+    }
+    .description{
+        font-size: 0.6rem;
+        margin: 0.5rem 0 1rem -1.7rem;
+        text-align: left;
+
+        p{
+            color: @Desaturated-blue;
+            margin: 0.3rem 0 0 0;
+            font-size: 0.8rem;
+        }
+    }
+    .link{
+        color: @Bright-blue;
+        font-size: 0.8rem;
+        text-decoration: underline;
+        margin-right: -0.8rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+button{
+    margin: 1rem 0;
+    background-color: @Bright-blue;
+    border: none;
+    color: @Very-pale-blue;
+    padding: 0.8rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: @regular;
+    font-family: @principal;
+    letter-spacing: 0.05rem;
+    box-shadow: 0px 3px 7px 3px rgba(@Bright-blue, 0.3);
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
+
+h3 {
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+    
+    a{
+    color: @Desaturated-blue;
+    text-decoration: none;
+    &:hover{
+        color: @Dark-blue;
+    }
+    }
+}
